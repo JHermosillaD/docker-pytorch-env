@@ -73,7 +73,7 @@ ffmpeg -f v4l2 -i /dev/video0 -s 640x480 -f rawvideo -pix_fmt rgb24 - > image_st
 
 ## Project Structure
 ```
-your-project/
+docker-pytorch-env/
 ├── docker-compose.yml
 ├── Dockerfile
 ├── requirements.txt
