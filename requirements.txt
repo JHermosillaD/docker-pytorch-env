@@ -1,0 +1,14 @@
+huggingface_hub
+opencv-python
+scikit-learn
+torchmetrics
+tensorboard
+ultralytics
+matplotlib
+graphviz
+seaborn
+jupyter
+pandas
+pillow 
+numpy 
+tqdm 
