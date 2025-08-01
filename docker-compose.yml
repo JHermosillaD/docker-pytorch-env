@@ -1,0 +1,21 @@
+services:
+  pytorch-container:
+    image: pytorch-env
+    container_name: pytorch-container
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    environment:
+      - DISPLAY=${DISPLAY}
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./image_stream:/tmp/image_stream
+      - ./pytorch-env:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    stdin_open: true
+    tty: true
