@@ -20,6 +20,7 @@ This Docker image is based on **Ubuntu 22.04.5 LTS (Jammy Jellyfish)** with a pr
 - [x] NVIDIA Container Toolkit
 - [x] Docker and Docker Compose
 - [x] X11 server (for GUI applications)
+- [x] FFmpeg
 
 ## Quick Start
 
